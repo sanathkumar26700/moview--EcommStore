@@ -51,19 +51,8 @@ export const products = [{
     },
     {
         _id: uuid(),
-        title: "X-Men : First Class",
-        image: "https://github.com/sanathkumar26700/moview__EcomStore--ui/blob/development/images/product-images/DVD/DVD-image1.jpg?raw=true",
-        director: "	Matthew Vaughn",
-        price: 250,
-        discount: 0,
-        category: "DVD",
-        rating: 2.5,
-        description: "James McAvoy, Michael Fassbender, Rose Byrne, Jennifer Lawrence, January Jones, Oliver Platt, and Kevin Bacon"
-    },
-    {
-        _id: uuid(),
         title: "Breaking Bad",
-        image: "https://github.com/sanathkumar26700/moview__EcomStore--ui/blob/development/images/product-images/DVD/DVD-image1.jpg?raw=true",
+        image: "https://github.com/sanathkumar26700/moview__EcomStore--ui/blob/development/images/product-images/series/series-bluray6.jpg?raw=true",
         director: "	Vince Giligan",
         price: 4000,
         discount: 10,
@@ -84,19 +73,8 @@ export const products = [{
     },
     {
         _id: uuid(),
-        title: "Venom : Let there be Carnage",
-        image: "https://github.com/sanathkumar26700/moview__EcomStore--ui/blob/development/images/product-images/Bluray/bluray-image3.jpg?raw=true",
-        director: "Andy Serkis",
-        price: 1600,
-        discount: 50,
-        category: "Blu-ray",
-        rating: 2.3,
-        description: "Tom Hardy, Michelle Williams, Naomie Harris, Reid Scott, Stephen Graham, Woody Harrelson."
-    },
-    {
-        _id: uuid(),
         title: "True Detective",
-        image: "https://github.com/sanathkumar26700/moview__EcomStore--ui/blob/development/images/product-images/series/series-bluray1.jpg",
+        image: "https://github.com/sanathkumar26700/moview__EcomStore--ui/blob/development/images/product-images/series/series-bluray1.jpg?raw=true",
         director: "Nic Pizzolatto",
         price: 4000,
         discount: 25,
@@ -172,20 +150,9 @@ export const products = [{
     },
     {
         _id: uuid(),
-        title: "1917",
-        image: "https://github.com/sanathkumar26700/moview__EcomStore--ui/blob/development/images/product-images/Bluray/bluray-image10.jpg?raw=true",
-        director: "Sam Mendes",
-        price: 2000,
-        discount: 75,
-        category: "Blu-ray",
-        rating: 3.9,
-        description: "George MacKay, Mark Strong, Andrew Scott, Richard Madden, Claire Duburcq, Colin Firth, Benedict Cumberbatch"
-    },
-    {
-        _id: uuid(),
         title: "Chanakya",
         image: "https://github.com/sanathkumar26700/moview__EcomStore--ui/blob/development/images/product-images/VCD/VCD-image3.jpg?raw=true",
-        director: "	Chandraprakash Dwivedi",
+        director: "Chandraprakash Dwivedi",
         price: 1000,
         discount: 90,
         category: "VCD",
