@@ -53,9 +53,7 @@ const filterBySearch = (data, searchFor) => {
     if(searchFor === ""){
         return data
     }else{
-
     return data.filter(item => item.title.toLowerCase().includes(searchFor.toLowerCase()))
-
 }}
 
 export {filterDataByExcludingOutOfStock, filterDataBySort, filterBySelectedCategories, filterDataByRating, filterDataByPricing, filterBySearch}
