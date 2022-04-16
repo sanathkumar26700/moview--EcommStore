@@ -1,8 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import "../Navbar/Navbar.css";
+import {useDataContext} from '../../Context/dataContext'
+
+
 
 function Navbar() {
+    const navigate = useNavigate()
+    const {state:{searchFor}, dispatch} = useDataContext()
   return (
         <nav className="nav__container bottom-shadow">
             <div className=" logo ">
@@ -14,7 +19,19 @@ function Navbar() {
             </div>
 
             <div className="searchbar__container">
-                <input className="input__field searchbar__input--field" type="search" placeholder="Search" id="search--bar"/> <label htmlFor="search--bar"><i className="fas fa-search icon btn"></i></label>
+                <input 
+                    className="input__field searchbar__input--field" 
+                    type="search" 
+                    placeholder="Search for a movie..." 
+                    id="search--bar"
+                    value = {searchFor}
+                    onChange={(e) =>{
+                        navigate("/product-list")
+                        dispatch({type : "SEARCH", payload : e.target.value})}}
+                    /> 
+                    <label htmlFor="search--bar">
+                        {searchFor === "" ? <i className="fas fa-search icon btn"></i> : null}
+                    </label>
             </div>
             <nav className="nav__container--nav-list">
                 <ul className="list-bulletless social-links">
