@@ -54,7 +54,7 @@ const filterBySearch = (data, searchFor) => {
         return data
     }else{
 
-    return data.filter(item => item.title.toLowerCase().includes(searchFor))
+    return data.filter(item => item.title.toLowerCase().includes(searchFor.toLowerCase()))
 
 }}
 
