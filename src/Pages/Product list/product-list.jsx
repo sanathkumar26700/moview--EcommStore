@@ -1,5 +1,5 @@
 import {React} from 'react';
-import SingleProduct from '../../Components/single-product'
+import SingleProduct from '../../Components/Single Product/single-product'
 import Filter from '../../Components/Filter/filter';
 import {useDataContext} from '../../Context/dataContext'
 import {filterDataByExcludingOutOfStock, filterDataBySort, filterBySelectedCategories, filterDataByRating, filterDataByPricing, filterBySearch} from '../../Utilities/JS/filterFunctions'
