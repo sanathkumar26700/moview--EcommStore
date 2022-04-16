@@ -1,12 +1,5 @@
-:root {
-  --primary-color: #e67f10d2;
-  --primary-color-dark: #7a3b04;
-}
-
 .filter__section {
   padding: 1rem;
-  position: sticky;
-  overflow-y: auto;
 }
 
 .product-list {
@@ -50,6 +43,10 @@
   font-size: 1.5rem;
 }
 
+.filter--box htmlForm {
+  font-size: 1.75rem;
+}
+
 .filter__container {
   margin-bottom: 1rem;
 }
@@ -59,14 +56,19 @@
   cursor: pointer;
 }
 
-.filter__container label {
-  margin-left: 0.5rem;
-  font-size: 1.75rem;
-  cursor: pointer;
-  display: inline;
+.filter--title {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.filter__container label:hover {
+.pricing--container label {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.pricing--container label:hover {
   color: var(--primary-color);
 }
 
@@ -77,70 +79,4 @@
   .filter__section {
     display: none;
   }
-}
-
-input[type="radio"] {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: var(--form-background);
-
-  font: inherit;
-  color: currentColor;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 0.15rem solid currentColor;
-  border-radius: 50%;
-  transform: translateY(-0.075em);
-
-  display: inline-grid;
-  place-content: center;
-}
-
-input[type="radio"]::before {
-  content: "";
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1rem 1rem var(--primary-color);
-  background-color: CanvasText;
-}
-
-input[type="radio"]:checked::before {
-  transform: scale(1);
-}
-
-input[type="radio"]:focus {
-  outline: max(2px, 0.15rem) solid currentColor;
-  outline-offset: max(2px, 0.15em);
-}
-
-input[type="checkbox"] {
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: var(--form-background);
-
-  font: inherit;
-  color: currentColor;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 0.15rem solid currentColor;
-  border-radius: 0.15rem;
-  transform: translateY(-0.075rem);
-  display: inline-grid;
-  place-content: center;
-}
-
-input[type="checkbox"]::before {
-  content: "";
-  width: 1rem;
-  height: 1rem;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1rem 1rem var(--primary-color);
-}
-
-input[type="checkbox"]:checked::before {
-  transform: scale(1);
 }

@@ -10,7 +10,7 @@
   padding: 1.5rem;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 19.75rem));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
 }
 
 .product-list__section .vertical .card__product--details {
@@ -66,13 +66,6 @@
   background-color: rgb(255, 240, 154);
 }
 
-.card__btn--container .btn {
-  cursor: default;
-}
-.Product-list__empty--text {
-  text-align: center;
-  font-size: 400%;
-}
 /*---------------------------------------------------------------------*/
 
 @media (max-width: 400px) {

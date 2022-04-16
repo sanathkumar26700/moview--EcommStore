@@ -14,7 +14,6 @@ export const products = [{
         discount: 25,
         category: "Blu-ray",
         rating: 3.8,
-        inStock : true,
         description: "Denzel Washington, Robert Pattinson, Dimple Kapadia, Elizabrth Debicki, Kenneth Branagh"
     },
     {
@@ -26,7 +25,6 @@ export const products = [{
         discount: 50,
         category: "Blu-ray",
         rating: 3.9,
-        inStock : true,
         description: " Timothée Chalamet, Rebecca Ferguson, Oscar Isaac, Josh Brolin, Stellan Skarsgård, Dave Bautista, Stephen McKinley Henderson, Zendaya, David Dastmalchian, Chang Chen, Sharon Duncan-Brewster, Charlotte Rampling, Jason Momoa, and Javier Bardem."
     },
     {
@@ -38,7 +36,6 @@ export const products = [{
         discount: 20,
         category: "Blu-ray",
         rating: 3.5,
-        inStock : true,
         description: "Jason Momoa, Amber Heard, Willem Dafoe, Patrick Wilson, Dolph Lundgren, Yahya Abdul-Mateen II, Temuera Morrison, and Nicole Kidman"
     },
     {
@@ -50,7 +47,6 @@ export const products = [{
         discount: 0,
         category: "DVD",
         rating: 2.5,
-        inStock : true,
         description: "James McAvoy, Michael Fassbender, Rose Byrne, Jennifer Lawrence, January Jones, Oliver Platt, and Kevin Bacon"
     },
     {
@@ -62,7 +58,6 @@ export const products = [{
         discount: 10,
         category: "Blu-ray",
         rating: 4.8,
-        inStock : true,
         description: "Bryan Cranston,Anna Gunn, Dean Norris, Betsy Brandt, RJ Mitte, Giancarlo Esposito, Bob Odenkirk, Jonathan Banks, Laura Fraser, Jesse Plemons"
     },
     {
@@ -74,7 +69,6 @@ export const products = [{
         discount: 50,
         category: "Blu-ray",
         rating: 2.3,
-        inStock : false,
         description: "Tom Hardy, Michelle Williams, Naomie Harris, Reid Scott, Stephen Graham, Woody Harrelson."
     },
     {
@@ -86,7 +80,6 @@ export const products = [{
         discount: 25,
         category: "Blu-ray",
         rating: 4.2,
-        inStock : true,
         description: " Matthew McConaughey, Woody Harrelson, Michelle Monaghan, Michael Potts, and Tory Kittles,"
     },
     {
@@ -98,7 +91,6 @@ export const products = [{
         discount: 10,
         category: "Blu-ray",
         rating: 3.2,
-        inStock : true,
         description: "Martin Freeman, Ian McKellen, Richard Armitage, Benedict Cumberbatch, Evangeline Lilly, Lee Pace, Luke Evans"
     },
     {
@@ -110,7 +102,6 @@ export const products = [{
         discount: 75,
         category: "DVD",
         rating: 3.2,
-        inStock : true,
         description: "Jaeden Lieberher,Bill Skarsgård, Jeremy Ray Taylor, Sophia Lillis, Finn Wolfhard, Wyatt Oleff, Chosen Jacobs, Jack Dylan Grazer, Nicholas Hamilton, Jackson Robert Scott"
     },
     {
@@ -122,7 +113,6 @@ export const products = [{
         discount: 60,
         category: "Blu-ray",
         rating: 4,
-        inStock : true,
         description: "Sushant Singh Rajput, Kiara Advani, Disha Patani, Anupam Kher"
     },
     {
@@ -134,7 +124,6 @@ export const products = [{
         discount: 10,
         category: "Blu-ray",
         rating: 3.75,
-        inStock : false,
         description: "Kareena Kapoor, Shahid Kapoor, Dara Singh, Pavan Malhotra, Saumya Tandon "
     },
     {
@@ -146,7 +135,6 @@ export const products = [{
         discount: 10,
         category: "Blu-ray",
         rating: 4.3,
-        inStock : true,
         description: "Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington, and Samuel L. Jackson, with Walton Goggins, Dennis Christopher, James Remar, Michael Parks, Don Johnson"
     },
     {
@@ -158,7 +146,6 @@ export const products = [{
         discount: 75,
         category: "Blu-ray",
         rating: 3.9,
-        inStock : false,
         description: "Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington, and Samuel L. Jackson, with Walton Goggins, Dennis Christopher, James Remar, Michael Parks, Don Johnson"
     },
     {
@@ -170,7 +157,6 @@ export const products = [{
         discount: 90,
         category: "VCD",
         rating: 3.25,
-        inStock : true,
         description: "Chandraprakash Dwivedi, Irrfan Khan, Sanjay Mishra, Dinesh Shakul, Suraj Chaddha, Surendra Pal, Prakash Dwivedi, Kurush Deboo, JD Majethia"
     }
 ];
