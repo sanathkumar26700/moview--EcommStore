@@ -31,7 +31,7 @@ function Filter() {
                 <div className="filter--box">
                 <div className="filter__container">
                     <h1>Category</h1>
-                    {categories.map((category,id) =>{
+                    {categories.map((category) =>{
                     return (<div>
                         <input 
                             className="category--input"  
