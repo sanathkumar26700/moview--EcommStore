@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import "../Navbar/Navbar.css";
 import {useDataContext} from '../../Context/dataContext'
 import {useAuth} from '../../Context/authContext'
-
+import { toast } from "react-toastify";
 
 function Navbar() {
     
@@ -16,6 +16,7 @@ function Navbar() {
             token : '',
             isAuthenticated : false
         })
+        toast.success('Logged out successfully !')
     }
 
     const {state:{searchFor}, dispatch} = useDataContext()
@@ -80,11 +81,10 @@ function Navbar() {
                         </Link>
                     </li>
                     {auth?.token ? 
-
                     (<li>
-                            <div onClick = {handleLogout} className="nav-list--item__icon--wrapper">
-                                <span  className="nav-items btn btn__primary btn__primary--animated">Log Out</span>
-                            </div>
+                        <div onClick = {handleLogout} className="nav-list--item__icon--wrapper">
+                            <span  className="nav-items btn btn__primary btn__primary--animated">Log Out</span>
+                        </div>
                     </li>)
                     :
                     (<li>

@@ -70,6 +70,7 @@ const SignUp = () => {
                     password,
                     userName : user
                 })
+                console.log(response)
                 if(response.status === 201){
                     localStorage.setItem("token", response.data.encodedToken);                  
                     setAuth({
@@ -83,6 +84,7 @@ const SignUp = () => {
                 }
         }
         catch(err){
+            console.log(err)
             setErrMsg(err.response.data.errors[0])
         }
     }
