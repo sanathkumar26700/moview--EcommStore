@@ -5,8 +5,6 @@ import './filter.css';
 function Filter() {
 
     const {state:{sortFrom, excludeOutOfStock, categories, selectedCategories, pricing, rating}, dispatch} = useDataContext()
-    // const {state:{data, isLoading, sortFrom, excludeOutOfStock, pricing, selectedCategories, rating, reset}} = useDataContext()
-
 
     const categoryHandler = (categoryName) => {
         if(selectedCategories.includes(categoryName)){
@@ -16,9 +14,7 @@ function Filter() {
             selectedCategories.push(categoryName)
             return selectedCategories
         }
-
     }
-
 
     return (
         <div>
@@ -35,7 +31,7 @@ function Filter() {
                 <div className="filter--box">
                 <div className="filter__container">
                     <h1>Category</h1>
-                    {categories.map(category =>{
+                    {categories.map((category,id) =>{
                     return (<div>
                         <input 
                             className="category--input"  
