@@ -2,11 +2,23 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import "../Navbar/Navbar.css";
 import {useDataContext} from '../../Context/dataContext'
-
-
+import {useAuth} from '../../Context/authContext'
+import { toast } from "react-toastify";
 
 function Navbar() {
+    
     const navigate = useNavigate()
+    const {auth, setAuth} = useAuth()
+
+    const handleLogout = () =>{
+        localStorage.removeItem('token')
+        setAuth({
+            token : '',
+            isAuthenticated : false
+        })
+        toast.success('Logged out successfully !')
+    }
+
     const {state:{searchFor}, dispatch} = useDataContext()
   return (
         <nav className="nav__container bottom-shadow">
@@ -68,13 +80,20 @@ function Navbar() {
                             </div>
                         </Link>
                     </li>
-                    <li>
-                        <Link to="/login-page" className="nav-list--item" href="/screens/signin-signup/signin.html">
+                    {auth?.token ? 
+                    (<li>
+                        <div onClick = {handleLogout} className="nav-list--item__icon--wrapper">
+                            <span  className="nav-items btn btn__primary btn__primary--animated">Log Out</span>
+                        </div>
+                    </li>)
+                    :
+                    (<li>
+                        <Link to="/login-page" className="nav-list--item">
                             <div className="nav-list--item__icon--wrapper">
-                                <span  className="nav-items btn btn__primary btn__primary--animated">Sign In</span>
+                                <span  className="nav-items btn btn__primary btn__primary--animated">Login</span>
                             </div>
                         </Link>
-                    </li>
+                    </li>)}
                     <li><i className="fas fa-adjust" id="mode--btn"></i></li>
                 </ul>
             </nav>
