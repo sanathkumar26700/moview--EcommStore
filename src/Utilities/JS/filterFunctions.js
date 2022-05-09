@@ -1,4 +1,3 @@
-   
 const filterDataBySort = (data, sortFrom) =>{
     if(sortFrom === "HIGH_TO_LOW"){ 
         return [...data].sort((a, b) => b["discountedPrice"] - a["discountedPrice"] )
