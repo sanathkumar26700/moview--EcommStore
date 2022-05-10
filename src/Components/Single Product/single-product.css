@@ -1,0 +1,7 @@
+.card__btn-fav {
+  border: none;
+}
+
+.in--wishlist {
+  color: var(--red--dark-color);
+}
