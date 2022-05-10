@@ -1,3 +1,7 @@
 .toastify {
   font-size: 1.75rem;
 }
+
+.main {
+  min-height: 80vh;
+}
