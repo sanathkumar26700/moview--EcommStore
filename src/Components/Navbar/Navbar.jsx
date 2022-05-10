@@ -65,7 +65,7 @@ function Navbar() {
                             <div className="nav-list--item__icon--wrapper">
                                 <span>
                                         <i className="fas icon fa-heart">
-                                            <span className="status-badge notification-badge">{isAuthorized ? wishListData.length : 0}</span>
+                                            {isAuthorized  && <span className="status-badge notification-badge">{wishListData.length}</span>}
                                 </i>
                                 </span>
                                 <span className="icon--text">wishlist</span>
@@ -77,7 +77,7 @@ function Navbar() {
                             <div className="nav-list--item__icon--wrapper">
                                 <span>
                                 <i className="fas icon fa-shopping-cart">
-                                    <span className="status-badge notification-badge">5</span>
+                                {isAuthorized  && <span className="status-badge notification-badge">{0}</span>}
                                 </i>
                                 </span>
                                 <span className="icon--text">cart</span>
