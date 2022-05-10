@@ -42,8 +42,6 @@ function Login() {
                  "isAuthorized" : true
             })
             toast.success('Successfully Logged in!');
-            setEmail('')
-            setPassword('')
             navigate(from, {replace : true})
         }catch(err){
             setErrMsg(err.response.data.errors[0])
