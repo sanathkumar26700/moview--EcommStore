@@ -1,0 +1,23 @@
+.page--heading {
+  width: 75%;
+  margin: auto;
+  font-size: 2.5rem;
+  padding: 2rem;
+  font-size: 4rem;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+.wish-list__container {
+  width: 75%;
+  margin: auto;
+}
+
+.wish-list__container .card {
+  max-width: 20rem;
+}
+
+.Product-list__empty--text {
+  text-align: center;
+  font-size: 400%;
+}
