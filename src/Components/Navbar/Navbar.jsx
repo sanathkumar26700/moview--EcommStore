@@ -10,7 +10,7 @@ import {useUserData} from '../../Context/userDataContext'
 function Navbar() {
     
     const navigate = useNavigate()
-    const {auth, setAuth} = useAuth()
+    const {auth:{isAuthorized}, setAuth} = useAuth()
     const {userData:{wishListData}} = useUserData()
 
 
@@ -65,7 +65,7 @@ function Navbar() {
                             <div className="nav-list--item__icon--wrapper">
                                 <span>
                                         <i className="fas icon fa-heart">
-                                            <span className="status-badge notification-badge">{wishListData.length}</span>
+                                            <span className="status-badge notification-badge">{isAuthorized ? wishListData.length : 0}</span>
                                 </i>
                                 </span>
                                 <span className="icon--text">wishlist</span>
@@ -84,7 +84,7 @@ function Navbar() {
                             </div>
                         </Link>
                     </li>
-                    {auth?.token ? 
+                    {isAuthorized ? 
                     (<li>
                         <div onClick = {handleLogout} className="nav-list--item__icon--wrapper">
                             <span  className="nav-items btn btn__primary btn__primary--animated">Log Out</span>
