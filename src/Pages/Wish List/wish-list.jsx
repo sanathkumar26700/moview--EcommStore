@@ -2,7 +2,7 @@ import React from 'react';
 import SingleProduct from '../../Components/Single Product/single-product'
 import Footer from '../../Components/Footer/footer'
 import {useUserData} from '../../Context/userDataContext'
-
+import './wish-list.css'
 
 const WishList = () => {
 
