@@ -79,7 +79,7 @@ const SignUp = () => {
                         email,
                         userName : user
                     })
-                    toast.success('Successfully Signed up!');
+                    toast.success(`👋 Welcome aboard ${response.data.createdUser.userName}!`);
                     navigate('/home')
                 }
         }
