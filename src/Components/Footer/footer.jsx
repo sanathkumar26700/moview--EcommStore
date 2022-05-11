@@ -2,10 +2,9 @@ import './footer.css'
 
 const Footer = ( ) => {
     return(
-    
         <footer className="main--footer">
             <div className="footer__credits--container">
-                <h3>made using
+                <h3>made using {" "}
                     <a className="anchor-style--none " href="http://viewi.netlify.app ">
                         <span>View<span className="dot ">.</span>I
                         <img src="https://github.com/sanathkumar26700/moview__EcomStore--ui/blob/development/images/logo--eye.png?raw=true" alt="eye--logo " className="logo--img img-responsive"/>

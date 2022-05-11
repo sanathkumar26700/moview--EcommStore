@@ -159,7 +159,7 @@ export const products = [{
         category: "Blu-ray",
         rating: 3.9,
         inStock : false,
-        description: "Jamie Foxx, Christoph Waltz, Leonardo DiCaprio, Kerry Washington, and Samuel L. Jackson, with Walton Goggins, Dennis Christopher, James Remar, Michael Parks, Don Johnson"
+        description: "George MacKay, Dean-Charles Chapman, Mark Strong, Andrew Scott, Richard Madden, Claire Duburcq, Colin Firth, Benedict Cumberbatch"
     },
     {
         _id: uuid(),

@@ -4,11 +4,15 @@ import "../Navbar/Navbar.css";
 import {useDataContext} from '../../Context/dataContext'
 import {useAuth} from '../../Context/authContext'
 import { toast } from "react-toastify";
+import {useUserData} from '../../Context/userDataContext'
+
 
 function Navbar() {
     
     const navigate = useNavigate()
-    const {auth, setAuth} = useAuth()
+    const {auth:{isAuthorized}, setAuth} = useAuth()
+    const {userData:{wishListData}} = useUserData()
+
 
     const handleLogout = () =>{
         localStorage.removeItem('token')
@@ -61,7 +65,7 @@ function Navbar() {
                             <div className="nav-list--item__icon--wrapper">
                                 <span>
                                         <i className="fas icon fa-heart">
-                                            <span className="status-badge notification-badge">6</span>
+                                            {isAuthorized  && <span className="status-badge notification-badge">{wishListData.length}</span>}
                                 </i>
                                 </span>
                                 <span className="icon--text">wishlist</span>
@@ -73,14 +77,14 @@ function Navbar() {
                             <div className="nav-list--item__icon--wrapper">
                                 <span>
                                 <i className="fas icon fa-shopping-cart">
-                                    <span className="status-badge notification-badge">5</span>
+                                {isAuthorized  && <span className="status-badge notification-badge">{0}</span>}
                                 </i>
                                 </span>
                                 <span className="icon--text">cart</span>
                             </div>
                         </Link>
                     </li>
-                    {auth?.token ? 
+                    {isAuthorized ? 
                     (<li>
                         <div onClick = {handleLogout} className="nav-list--item__icon--wrapper">
                             <span  className="nav-items btn btn__primary btn__primary--animated">Log Out</span>
