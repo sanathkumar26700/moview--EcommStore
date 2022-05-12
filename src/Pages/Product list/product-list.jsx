@@ -29,7 +29,7 @@ const ProductList = () => {
             <>
                 {finalData.length ?
                     <section className="product-list__section ">
-                        {finalData.map((product) => <SingleProduct product = {product} key={product._id}/>)}
+                        {finalData.map((product) => <SingleProduct cardDirection={'vertical'} product = {product} key={product._id}/>)}
                     </section>
                 : 
                 <h1 className = "Product-list__empty--text">Products Unavailable 😣</h1>

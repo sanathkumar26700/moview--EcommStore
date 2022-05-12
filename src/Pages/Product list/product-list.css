@@ -60,10 +60,6 @@
   background-color: rgb(255, 240, 154);
 }
 
-.card__btn--container .btn {
-  cursor: default;
-}
-
 .Product-list__empty--text {
   text-align: center;
   font-size: 400%;
