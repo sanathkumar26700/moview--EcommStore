@@ -41,7 +41,7 @@ function Login() {
                 token : response?.data?.encodedToken,
                  "isAuthorized" : true
             })
-            toast.success('Successfully Logged in!');
+            toast.success(`👋 Welcome back ${response.data.foundUser.userName}!`);
             navigate(from, {replace : true})
         }catch(err){
             setErrMsg(err.response.data.errors[0])

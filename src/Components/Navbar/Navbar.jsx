@@ -11,7 +11,7 @@ function Navbar() {
     
     const navigate = useNavigate()
     const {auth:{isAuthorized}, setAuth} = useAuth()
-    const {userData:{wishListData}} = useUserData()
+    const {userData:{wishListData, cartListData}} = useUserData()
 
 
     const handleLogout = () =>{
@@ -76,9 +76,9 @@ function Navbar() {
                         <Link to="/cart-list" className="nav-list--item">
                             <div className="nav-list--item__icon--wrapper">
                                 <span>
-                                <i className="fas icon fa-shopping-cart">
-                                {isAuthorized  && <span className="status-badge notification-badge">{0}</span>}
-                                </i>
+                                  <i className="fas icon fa-shopping-cart">
+                                    {isAuthorized  && <span className="status-badge notification-badge">{cartListData.length}</span>}
+                                  </i>
                                 </span>
                                 <span className="icon--text">cart</span>
                             </div>

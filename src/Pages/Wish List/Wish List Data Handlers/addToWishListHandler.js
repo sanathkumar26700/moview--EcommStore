@@ -9,7 +9,7 @@ const addToWishlistHandler = async(product, token, userDataDispatch, setFetching
             toast.success('Added to WishList !')
             userDataDispatch({
                 type: "SET_WISHLIST", 
-                payload: response.data.wishlist
+                payload: response?.data.wishlist
             })
             setFetchingWishList(false)
         }

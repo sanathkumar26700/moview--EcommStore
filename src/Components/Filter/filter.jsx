@@ -2,7 +2,7 @@ import React from 'react';
 import {useDataContext} from '../../Context/dataContext'
 import './filter.css';
 
-function Filter() {
+function Filter({display}) {
 
     const {state:{sortFrom, excludeOutOfStock, categories, selectedCategories, pricing, rating}, dispatch} = useDataContext()
 
@@ -18,7 +18,10 @@ function Filter() {
 
     return (
         <div>
-            <aside className="filter__section side-shadow">
+            <aside className="filter__section side-shadow"
+                    style ={{display}}
+            
+            >
                 <div className="filter--box">
                     <div className="filter--header">
                         <h1>filter</h1>

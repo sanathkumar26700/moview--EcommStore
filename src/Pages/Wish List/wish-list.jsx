@@ -1,8 +1,7 @@
 import React from 'react';
 import SingleProduct from '../../Components/Single Product/single-product'
-import Footer from '../../Components/Footer/footer'
 import {useUserData} from '../../Context/userDataContext'
-
+import './wish-list.css'
 
 const WishList = () => {
 
@@ -22,7 +21,7 @@ const WishList = () => {
             {wishListData.length ?
             <section className="wish-list__container">
                 <section className="product-list__section">
-                    {wishListData.map(product => <SingleProduct product={product} key={product._id}/>)}
+                    {wishListData.map(product => <SingleProduct cardDirection={'vertical'} product={product} key={product._id}/>)}
                 </section>
             </section>
             :
