@@ -1,0 +1,93 @@
+.cart-list__section {
+  padding: 1.5rem;
+  width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 30rem;
+  grid-gap: 2rem;
+}
+
+.card-list__container > * {
+  margin-bottom: 1.5rem;
+}
+
+/*---------------------------------------------------*/
+
+.billing__section {
+  width: 100%;
+  padding: 1rem;
+  position: sticky;
+  top: calc(60px + 5rem);
+  height: min-content;
+  border: 1px solid var(--border-color);
+  box-shadow: var(---box-shadow--card);
+  border-radius: 1.6rem;
+}
+
+.bill__box {
+  padding: 2rem;
+  width: 100%;
+}
+
+.bill__box h1 {
+  font-size: 4rem;
+  color: var(--primary-color);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.bill__details > * {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 350;
+}
+
+.bill__details--element:last-child {
+  border-top: 0.2rem solid var(--primary-color);
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.bill__details--subtitle {
+  margin-left: auto;
+}
+
+.bill__box .btn {
+  width: 100%;
+}
+
+.Product-list__empty--text {
+  text-align: center;
+  font-size: 400%;
+}
+
+/*---------------------------------------------------------------*/
+
+@media (max-width: 400px) {
+  .cart-list__section {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .billing__section {
+    width: 100%;
+    padding: 1rem;
+    height: min-content;
+  }
+
+  .bill__box > *,
+  .bill__details--element {
+    font-size: 120%;
+  }
+
+  .Product-list__empty--text {
+    text-align: center;
+    font-size: 200%;
+  }
+
+  .page--heading {
+    font-size: 2.5rem;
+  }
+}
