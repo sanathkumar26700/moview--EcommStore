@@ -76,9 +76,9 @@ function Navbar() {
                         <Link to="/cart-list" className="nav-list--item">
                             <div className="nav-list--item__icon--wrapper">
                                 <span>
-                                <i className="fas icon fa-shopping-cart">
-                                {isAuthorized  && <span className="status-badge notification-badge">{cartListData.length}</span>}
-                                </i>
+                                  <i className="fas icon fa-shopping-cart">
+                                    {isAuthorized  && <span className="status-badge notification-badge">{cartListData.length}</span>}
+                                  </i>
                                 </span>
                                 <span className="icon--text">cart</span>
                             </div>
