@@ -15,11 +15,11 @@ const ProductList = () => {
 
     return (
         <>
-        <div class="filter__action--container">
+        <div className="filter__action--container ">
         {((display === 'none') || (display === '')) &&
-                <button onClick={() => setDisplay('block')} class="btn btn__underlined"><i class="fas fa-filter" aria-hidden="true"></i></button>}
+                <button onClick={() => setDisplay('block')} className="btn btn__underlined"><i className="fas fa-filter" aria-hidden="true"></i></button>}
         {(display === 'block') && 
-                <button onClick={() => setDisplay('none')} class="btn btn__underlined"><i class="fas fa-times" aria-hidden="true"></i></button>}
+                <button onClick={() => setDisplay('none')} className="btn btn__underlined"><i className="fas fa-times" aria-hidden="true"></i></button>}
         </div>
         <section className="product-list__container">
                 <Filter display={display}/>
