@@ -47,8 +47,8 @@
 
 .login__form--container .main--btn {
   font-size: 2rem;
-  margin: auto;
-  width: 75%;
+  /* margin: 5rem; */
+  width: 100%;
   margin-bottom: 1rem;
 }
 
