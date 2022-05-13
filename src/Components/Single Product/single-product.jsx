@@ -91,7 +91,12 @@ useEffect(()=>{
                                             </Link>
                                 :
                                     <button 
-                                        onClick={()=>addToCartListHandler(product, token, userDataDispatch, setFetchingCartList)} 
+                                        onClick={
+                                            isAuthorized ?
+                                                    ()=>addToCartListHandler(product, token, userDataDispatch, setFetchingCartList)
+                                                :
+                                                    () => navigate('/login-page')
+                                        }
                                         className="btn btn--animated card__btn--add-to-cart"
                                         disabled={fetchingCartList}
                                         >
