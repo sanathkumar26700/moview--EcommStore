@@ -5,6 +5,7 @@ import {useDataContext} from '../../Context/dataContext'
 import {useAuth} from '../../Context/authContext'
 import { toast } from "react-toastify";
 import {useUserData} from '../../Context/userDataContext'
+import DarkModeButton from '../../Utilities/JS/darkMode'
 
 
 function Navbar() {
@@ -27,7 +28,7 @@ function Navbar() {
   return (
         <nav className="nav__container bottom-shadow">
             <div className=" logo ">
-                <Link to="/home" className="anchor-style--none " href="/index.html ">
+                <Link to="/home" className="anchor-style--none">
                     <span className="logo--title logo--title-black "><span className="dot ">mo</span>view
                     <img src="https://github.com/sanathkumar26700/moview__EcomStore--ui/blob/development/images/logo--eye.png?raw=true" alt=" eye--logo" className="logo--img img-responsive"/>
                     </span>
@@ -98,7 +99,9 @@ function Navbar() {
                             </div>
                         </Link>
                     </li>)}
-                    <li><i className="fas fa-adjust" id="mode--btn"></i></li>
+                    <li>
+                        <DarkModeButton/>
+                    </li>
                 </ul>
             </nav>
         </nav>
