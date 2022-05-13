@@ -86,7 +86,7 @@ useEffect(()=>{
                                         :
                                             <Link  to='/cart-list'>   
                                                 <button className="btn btn--animated card__btn--add-to-cart">
-                                                    Go to cart<i className="fas fa-shopping-cart btn__icon-right"></i>
+                                                    {isAuthorized ? 'Go to cart' : 'Add to cart'}<i className="fas fa-shopping-cart btn__icon-right"></i>
                                                 </button>
                                             </Link>
                                 :
