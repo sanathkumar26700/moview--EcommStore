@@ -21,7 +21,7 @@ So to bring back the lost glory of CDs, MOVIEW - an E-commerce store where you c
 
 https://user-images.githubusercontent.com/53991484/168458367-079df0fd-a9c1-4ae9-acae-57f430d84281.mp4
 
-## main pages
+## main features
 
 1) Authentication - Sign in, Login and logout
     - [login page](https://moview-ecomm-store-1.vercel.app/login-page)
