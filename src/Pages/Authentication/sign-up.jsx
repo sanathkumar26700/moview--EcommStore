@@ -124,7 +124,7 @@ const SignUp = () => {
                             </p>
 
                             <label className="input__label input__label-required" htmlFor="input--email">
-                                E-email ID : 
+                                E-mail ID : 
                                 <span className= {validEmail ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck} /></span>
                                 <span className= {validEmail || !email ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes} /></span>
                             </label>
